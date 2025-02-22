@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+
+    <script>
+
+        $(document).ready(function(){
+        $("#btn").click(function(){
+            const obj = {name:$("#name").val(),email:$("#email").val(),Password:$("#Password").val()};
+            const json =JSON.stringify(obj);
+            localStorage.setItem("data",json)
+            $("#div").load("http://127.0.0.1:5500/ajax2.html");
+        })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="div">
+        <h1>Sign In</h1>
+        <label for="Name">Enter Your Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name" ><br><br>
+
+        <label for="Name">Enter Your Email:</label>
+        <input type="text" placeholder="Email" id="email"><br><br>
+
+        <label for="Name">Enter Password:</label>
+        <input type="text" placeholder="Password" id="Password"><br><br>
+
+        <button id="btn">SUBMIT</button>
+    </div>
+    
+    
+</body>
+</html>
