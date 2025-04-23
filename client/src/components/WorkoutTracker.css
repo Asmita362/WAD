@@ -1,0 +1,118 @@
+/* WorkoutTracker.css */
+
+/* Main container styling */
+.workout-tracker-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .workout-tracker-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #10b981; /* Tailwind's green-600 */
+    margin-bottom: 1rem;
+  }
+  
+  /* Label and input fields */
+  .workout-tracker-container label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563; /* Tailwind's gray-700 */
+  }
+  
+  .workout-tracker-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .workout-tracker-container input:focus {
+    border-color: #10b981; /* Tailwind's green-600 */
+    outline: none;
+  }
+  
+  /* Button styling */
+  .workout-tracker-container .add-workout-button {
+    background-color: #10b981; /* Green */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .workout-tracker-container .add-workout-button:hover {
+    background-color: #059669; /* Hover state for green */
+    transform: scale(1.05);
+  }
+  
+  /* Workout log section */
+  .workout-tracker-container .workout-log {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .workout-tracker-container .workout-log h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4b5563; /* Tailwind's gray-700 */
+    margin-bottom: 1rem;
+  }
+  
+  .workout-tracker-container .workout-log ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .workout-tracker-container .workout-log li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .workout-tracker-container .workout-log li button {
+    font-size: 0.875rem;
+    color: #ef4444; /* Tailwind's red-500 */
+    transition: color 0.3s ease;
+  }
+  
+  .workout-tracker-container .workout-log li button:hover {
+    color: #dc2626; /* Tailwind's red-700 */
+  }
+  
+  /* Small screen styling (Mobile responsiveness) */
+  @media (max-width: 640px) {
+    .workout-tracker-container {
+      padding: 1.5rem;
+      width: 100%;
+    }
+  
+    .workout-tracker-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .workout-tracker-container input {
+      font-size: 1.125rem;
+    }
+  
+    .workout-tracker-container .add-workout-button {
+      font-size: 1.125rem;
+    }
+  }
+  
