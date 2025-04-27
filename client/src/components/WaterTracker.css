@@ -1,0 +1,98 @@
+/* WaterTracker.css */
+
+/* Main container for the water tracker component */
+.water-tracker-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .water-tracker-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e40af; /* Blue color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Goal and consumed text styling */
+  .water-tracker-container p {
+    font-size: 1rem;
+    color: #4b5563; /* Tailwind's gray-700 */
+    margin-bottom: 1rem;
+  }
+  
+  /* Button container for actions */
+  .water-tracker-container .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Style for the add glass button */
+  .water-tracker-container .add-glass-button {
+    background-color: #1e40af; /* Blue background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .water-tracker-container .add-glass-button:disabled {
+    background-color: #d1d5db; /* Disabled color */
+    cursor: not-allowed;
+  }
+  
+  .water-tracker-container .add-glass-button:hover:enabled {
+    background-color: #2563eb; /* Hover state */
+    transform: scale(1.05);
+  }
+  
+  /* Style for the reset button */
+  .water-tracker-container .reset-button {
+    background-color: #e5e7eb; /* Light gray */
+    color: #4b5563; /* Text color */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .water-tracker-container .reset-button:hover {
+    background-color: #d1d5db; /* Hover state */
+    transform: scale(1.05);
+  }
+  
+  /* Progress bar container */
+  .water-tracker-container progress {
+    width: 100%;
+    height: 10px;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  /* Progress bar text percentage */
+  .water-tracker-container .progress-text {
+    font-size: 0.875rem;
+    color: #6b7280; /* Tailwind's gray-500 */
+    margin-top: 0.5rem;
+  }
+  
+  /* Small screen styles (Mobile responsiveness) */
+  @media (max-width: 640px) {
+    .water-tracker-container {
+      padding: 1.5rem;
+      width: 100%;
+    }
+  
+    .water-tracker-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
